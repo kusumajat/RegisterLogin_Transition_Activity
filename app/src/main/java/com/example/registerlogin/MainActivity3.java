@@ -33,7 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                 // Cek jika username dan password tidak kosong
                 if (!username.isEmpty() && !password.isEmpty()) {
-                    // Buat Intent untuk berpindah ke halaman homepage
+                    // Intent untuk berpindah ke halaman homepage
                     Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
                     intent.putExtra("USERNAME", username);
 
@@ -41,7 +41,7 @@ public class MainActivity3 extends AppCompatActivity {
                     startActivity(intent);
                     overridePendingTransition(R.anim.slide_atas, R.anim.slide_keluar_atas);
                 } else {
-                    // Jika kosong, tambahkan logika untuk menunjukkan error (misalnya dengan Toast)
+
                 }
             }
         });

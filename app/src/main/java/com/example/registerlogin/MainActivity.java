@@ -38,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 // Buat Intent untuk berpindah ke halaman homepage
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 intent.putExtra("USERNAME", username);
-                intent.putExtra("EMAIL", email);
-                intent.putExtra("PHONE", phone);
-                intent.putExtra("PASSWORD", password);
 
                 // Pindah ke halaman homepage
                 startActivity(intent);

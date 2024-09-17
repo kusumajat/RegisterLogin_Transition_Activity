@@ -15,14 +15,11 @@ public class MainActivity2 extends AppCompatActivity {
 
         tvWelcomeMessage = findViewById(R.id.tvWelcomeMessage);
 
-        // Ambil data yang dikirim dari halaman register
+        // Mengambil data yang dikirim dari halaman register dan login
         String username = getIntent().getStringExtra("USERNAME");
-        String email = getIntent().getStringExtra("EMAIL");
-        String phone = getIntent().getStringExtra("PHONE");
-        String password = getIntent().getStringExtra("PASSWORD");
 
-        // Tampilkan data pada TextView
-        String welcomeMessage = "Welcome " + username + "\nYour email has been activated: " + email + "\nYour phone has been registered: " + phone;
+        // Menampilkan data pada TextView
+        String welcomeMessage = "Welcome " + username + "\nYour email has been activated \nYour phone has been registered";
         tvWelcomeMessage.setText(welcomeMessage);
     }
 }
